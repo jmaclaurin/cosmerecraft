@@ -1,4 +1,16 @@
-[{
-  "modid": "mistcraft",
-  "name": "Mistcraft"
-}]
+[
+  {
+    "modid": "mistcraft",
+    "name": "Mistcraft",
+    "description": "",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["Jessica Zöller"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
