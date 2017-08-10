@@ -1,8 +1,8 @@
 package com.mistcraft.common.block;
 
+import com.mistcraft.common.MistcraftCreativeTab;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.ResourceLocation;
 
 public class BlockBase extends Block {
@@ -10,7 +10,7 @@ public class BlockBase extends Block {
         super(material);
         this.setUnlocalizedName(unlocalizedName);
         this.setRegistryName(new ResourceLocation(com.mistcraft.Mistcraft.MODID, unlocalizedName));
-        this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+        this.setCreativeTab(MistcraftCreativeTab.INSTANCE);
         this.setHardness(hardness);
         this.setResistance(resistance);
     }
