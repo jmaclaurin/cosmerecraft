@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod.EventBusSubscriber(modid = com.mistcraft.Mistcraft.MODID)
 public final class ModBlocks {
-    private static Block copperOreBlock = new BlockCopperOre();
+    public static Block copperOreBlock = new BlockCopperOre();
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
