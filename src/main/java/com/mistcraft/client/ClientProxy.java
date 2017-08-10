@@ -13,6 +13,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class ClientProxy implements IProxy {
     public void preInit(FMLPreInitializationEvent event) {
         registerBlockModel(ModBlocks.COPPER_ORE);
+        registerBlockModel(ModBlocks.TIN_ORE);
+        registerBlockModel(ModBlocks.ZINC_ORE);
     }
 
     public void init(FMLInitializationEvent event) {
