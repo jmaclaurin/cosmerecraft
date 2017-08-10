@@ -5,8 +5,8 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.ResourceLocation;
 
-public class BlockOre extends Block {
-    public BlockOre(String unlocalizedName, Material material, float hardness, float resistance) {
+public class BlockBase extends Block {
+    public BlockBase(String unlocalizedName, Material material, float hardness, float resistance) {
         super(material);
         this.setUnlocalizedName(unlocalizedName);
         this.setRegistryName(new ResourceLocation(com.mistcraft.Mistcraft.MODID, unlocalizedName));
@@ -15,11 +15,11 @@ public class BlockOre extends Block {
         this.setResistance(resistance);
     }
 
-    public BlockOre(String unlocalizedName, float hardness, float resistance) {
+    public BlockBase(String unlocalizedName, float hardness, float resistance) {
         this(unlocalizedName, Material.ROCK, hardness, resistance);
     }
 
-    public BlockOre(String unlocalizedName) {
+    public BlockBase(String unlocalizedName) {
         this(unlocalizedName, 2.0F, 10.0F);
     }
 }

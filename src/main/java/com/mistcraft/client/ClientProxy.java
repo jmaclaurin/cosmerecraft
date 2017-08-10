@@ -11,10 +11,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class ClientProxy implements IProxy {
     public void preInit(FMLPreInitializationEvent event) {
-        // Test registering a custom block model
-        // TODO: Set sided proxy.
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(ModBlocks.copperOreBlock), ModBlocks.copperOreBlock.getMetaFromState(ModBlocks.copperOreBlock.getDefaultState()),
-                new ModelResourceLocation(ModBlocks.copperOreBlock.getRegistryName(), "normal"));
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(ModBlocks.COPPER_ORE),
+                ModBlocks.COPPER_ORE.getMetaFromState(ModBlocks.COPPER_ORE.getDefaultState()),
+                new ModelResourceLocation(ModBlocks.COPPER_ORE.getRegistryName(), "normal"));
     }
 
     public void init(FMLInitializationEvent event) {
