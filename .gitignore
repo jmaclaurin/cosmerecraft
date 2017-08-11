@@ -2,3 +2,6 @@
 .gradle
 build
 run
+mistcraft.iml
+mistcraft.ipr
+mistcraft.iws
