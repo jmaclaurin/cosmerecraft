@@ -14,10 +14,10 @@ public class ItemBase extends Item {
     }
 
     public ItemBase(String unlocalizedName, int maxStackSize) {
-        this(unlocalizedName, maxStackSize, 0)
+        this(unlocalizedName, maxStackSize, 0);
     }
 
     public ItemBase(String unlocalizedName) {
-        this(unlocalizedName, 64, 0)
+        this(unlocalizedName, 64, 0);
     }
 }
