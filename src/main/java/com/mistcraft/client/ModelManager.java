@@ -2,6 +2,7 @@ package com.mistcraft.client;
 
 import com.mistcraft.Mistcraft;
 import com.mistcraft.common.block.ModBlocks;
+import com.mistcraft.common.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.block.statemap.StateMap;
@@ -36,7 +37,9 @@ public class ModelManager {
         registerBlockModelAsItem(ModBlocks.ZINC_ORE);
     }
 
-    private void registerItemModels() {}
+    private void registerItemModels() {
+        registerItemModel(ModItems.COPPER_INGOT);
+    }
 
     public static void registerItemModel(Item item, String variant,  int meta) {
         ModelLoader.setCustomModelResourceLocation(
