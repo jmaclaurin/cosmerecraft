@@ -15,15 +15,19 @@ public final class ModBlocks {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        event.getRegistry().register(COPPER_ORE);
-        event.getRegistry().register(TIN_ORE);
-        event.getRegistry().register(ZINC_ORE);
+        event.getRegistry().registerAll(
+                COPPER_ORE,
+                TIN_ORE,
+                ZINC_ORE
+        );
     }
 
     @SubscribeEvent
     public static void registerItemBlocks(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(new ItemBlock(COPPER_ORE).setRegistryName(COPPER_ORE.getRegistryName()));
-        event.getRegistry().register(new ItemBlock(TIN_ORE).setRegistryName(TIN_ORE.getRegistryName()));
-        event.getRegistry().register(new ItemBlock(ZINC_ORE).setRegistryName(ZINC_ORE.getRegistryName()));
+        event.getRegistry().registerAll(
+                new ItemBlock(COPPER_ORE).setRegistryName(COPPER_ORE.getRegistryName()),
+                new ItemBlock(TIN_ORE).setRegistryName(TIN_ORE.getRegistryName()),
+                new ItemBlock(ZINC_ORE).setRegistryName(ZINC_ORE.getRegistryName())
+        );
     }
 }

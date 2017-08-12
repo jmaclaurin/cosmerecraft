@@ -10,10 +10,16 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public final class ModItems {
     public static Item COPPER_INGOT = new ItemBase("copper_ingot");
     public static Item COPPER_NUGGET = new ItemBase("copper_nugget");
+    public static Item TIN_INGOT = new ItemBase("tin_ingot");
+    public static Item TIN_NUGGET = new ItemBase("tin_nugget");
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(COPPER_INGOT);
-        event.getRegistry().register(COPPER_NUGGET);
+        event.getRegistry().registerAll(
+                COPPER_INGOT,
+                COPPER_NUGGET,
+                TIN_INGOT,
+                TIN_NUGGET
+        );
     }
 }
