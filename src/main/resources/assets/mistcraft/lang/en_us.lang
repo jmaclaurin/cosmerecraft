@@ -4,6 +4,8 @@ item.copper_ore.name=Copper Ore
 item.tin_ingot.name=Tin Ingot
 item.tin_nugget.name=Tin Nugget
 item.tin_ore.name=Tin Ore
+item.zinc_ingot.name=Zinc Ingot
+item.zinc_nugget.name=Zinc Nugget
 item.zinc_ore.name=Zinc Ore
 
 itemGroup.mistcraft=Mistcraft

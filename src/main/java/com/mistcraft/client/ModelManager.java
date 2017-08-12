@@ -39,6 +39,8 @@ public class ModelManager {
         registerItemModel(ModItems.COPPER_NUGGET);
         registerItemModel(ModItems.TIN_INGOT);
         registerItemModel(ModItems.TIN_NUGGET);
+        registerItemModel(ModItems.ZINC_INGOT);
+        registerItemModel(ModItems.ZINC_NUGGET);
     }
 
     public static void registerItemModel(Item item, String variant,  int meta) {
