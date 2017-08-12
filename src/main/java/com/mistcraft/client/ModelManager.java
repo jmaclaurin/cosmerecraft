@@ -20,25 +20,23 @@ import java.util.Set;
 @SideOnly(Side.CLIENT)
 @Mod.EventBusSubscriber(modid=com.mistcraft.Mistcraft.MODID, value=Side.CLIENT)
 public class ModelManager {
-    public static final ModelManager INSTANCE = new ModelManager();
-    private final Set<Item> itemsRegistered = new HashSet<>();
-
     public ModelManager() {}
 
     @SubscribeEvent
     public static void registerAllModels(ModelRegistryEvent event) {
-        INSTANCE.registerBlockModels();
-        INSTANCE.registerItemModels();
+        registerBlockModels();
+        registerItemModels();
     }
 
-    private void registerBlockModels() {
+    private static void registerBlockModels() {
         registerBlockModelAsItem(ModBlocks.COPPER_ORE);
         registerBlockModelAsItem(ModBlocks.TIN_ORE);
         registerBlockModelAsItem(ModBlocks.ZINC_ORE);
     }
 
-    private void registerItemModels() {
+    private static void registerItemModels() {
         registerItemModel(ModItems.COPPER_INGOT);
+        registerItemModel(ModItems.COPPER_NUGGET);
     }
 
     public static void registerItemModel(Item item, String variant,  int meta) {
@@ -46,11 +44,11 @@ public class ModelManager {
                 item, meta, new ModelResourceLocation(item.getRegistryName(), variant));
     }
 
-    public static void registerItemModel(Item item, String variant) {
+    private static void registerItemModel(Item item, String variant) {
         registerItemModel(item, variant, 0);
     }
 
-    public static void registerItemModel(Item item) {
+    private static void registerItemModel(Item item) {
         registerItemModel(item, "inventory", 0);
     }
 
