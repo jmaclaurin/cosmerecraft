@@ -35,10 +35,13 @@ public class ModelManager {
     private static void registerItemModels() {
         registerItemModel(ModItems.COPPER_INGOT);
         registerItemModel(ModItems.COPPER_NUGGET);
+        registerItemModel(ModItems.COPPER_SHAVINGS);
         registerItemModel(ModItems.TIN_INGOT);
         registerItemModel(ModItems.TIN_NUGGET);
+        registerItemModel(ModItems.TIN_SHAVINGS);
         registerItemModel(ModItems.ZINC_INGOT);
         registerItemModel(ModItems.ZINC_NUGGET);
+        registerItemModel(ModItems.ZINC_SHAVINGS);
     }
 
     public static void registerItemModel(Item item, String variant,  int meta) {
