@@ -1,20 +1,21 @@
-package com.mistcraft.server;
+package com.mistcraft.common;
 
-import com.mistcraft.common.CommonProxy;
+import com.mistcraft.world.gen.ModWorldGenerator;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class ServerProxy extends CommonProxy {
+public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
-        super.preInit(event);
+        GameRegistry.registerWorldGenerator(new ModWorldGenerator(), 0);
     }
 
     public void init(FMLInitializationEvent event) {
-        super.init(event);
+
     }
 
     public void postInit(FMLPostInitializationEvent event) {
-        super.postInit(event);
+
     }
 }

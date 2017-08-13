@@ -1,6 +1,6 @@
 package com.mistcraft;
 
-import com.mistcraft.common.IProxy;
+import com.mistcraft.common.CommonProxy;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -18,7 +18,7 @@ public class Mistcraft {
     public static final String SERVER_PROXY = "com.mistcraft.server.ServerProxy";
 
     @SidedProxy(clientSide=CLEINT_PROXY, serverSide=SERVER_PROXY)
-    public static IProxy proxy;
+    public static CommonProxy proxy;
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
