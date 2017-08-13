@@ -16,9 +16,13 @@ import java.util.Random;
 @Mod.EventBusSubscriber(modid = Mistcraft.MODID)
 public class ModWorldGenerator implements IWorldGenerator {
     private WorldGenerator copper_ore_generator;
+    private WorldGenerator tin_ore_generator;
+    private WorldGenerator zinc_ore_generator;
 
     public ModWorldGenerator() {
         this.copper_ore_generator = new WorldGenMinable(ModBlocks.COPPER_ORE.getDefaultState(), 8);
+        this.tin_ore_generator = new WorldGenMinable(ModBlocks.TIN_ORE.getDefaultState(), 8);
+        this.zinc_ore_generator = new WorldGenMinable(ModBlocks.ZINC_ORE.getDefaultState(), 8);
     }
 
     @Override
@@ -27,6 +31,8 @@ public class ModWorldGenerator implements IWorldGenerator {
         switch(world.provider.getDimension()) {
             case 0: //Overworld
                 this.runGenerator(this.copper_ore_generator, world, random, chunkX, chunkZ, 20, 0, 64);
+                this.runGenerator(this.tin_ore_generator, world, random, chunkX, chunkZ, 20, 0, 64);
+                this.runGenerator(this.zinc_ore_generator, world, random, chunkX, chunkZ, 20, 0, 64);
                 break;
             case -1: //Nether
                 break;
