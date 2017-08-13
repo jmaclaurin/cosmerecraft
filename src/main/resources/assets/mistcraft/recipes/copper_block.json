@@ -2,18 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "AAA",
-    "ABA",
+    "AAA",
     "AAA"
   ],
   "key": {
     "A": {
       "item": "mistcraft:copper_ingot"
-    },
-    "B": {
-      "item": "mistcraft:copper_ore"
     }
   },
   "result": {
-    "item": "minecraft:diamond"
+    "item": "mistcraft:copper_block"
   }
 }
