@@ -29,22 +29,23 @@ public class ModWorldGenerator implements IWorldGenerator {
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator,
                          IChunkProvider chunkProvider) {
         switch(world.provider.getDimension()) {
-            case 0: //Overworld
+            case 0: // Overworld
                 this.runGenerator(this.copper_ore_generator, world, random, chunkX, chunkZ, 20, 0, 64);
                 this.runGenerator(this.tin_ore_generator, world, random, chunkX, chunkZ, 20, 0, 64);
                 this.runGenerator(this.zinc_ore_generator, world, random, chunkX, chunkZ, 20, 0, 64);
                 break;
-            case -1: //Nether
+            case -1: // Nether
                 break;
-            case 1: //End
+            case 1: // End
                 break;
         }
     }
 
     private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z,
                               int chancesToSpawn, int minHeight, int maxHeight) {
-        if (minHeight < 0 || maxHeight > 256 || minHeight > maxHeight)
+        if (minHeight < 0 || maxHeight > 256 || minHeight > maxHeight) {
             throw new IllegalArgumentException("Illegal Height Arguments for WorldGenerator");
+        }
 
         int heightDiff = maxHeight - minHeight + 1;
         for (int i = 0; i < chancesToSpawn; i ++) {
@@ -54,5 +55,4 @@ public class ModWorldGenerator implements IWorldGenerator {
             generator.generate(world, rand, new BlockPos(x, y, z));
         }
     }
-
 }
