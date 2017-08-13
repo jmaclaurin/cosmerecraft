@@ -1,15 +1,21 @@
+item.copper_block.name=Copper Block
 item.copper_ingot.name=Copper Ingot
 item.copper_nugget.name=Copper Nugget
 item.copper_ore.name=Copper Ore
+item.tin_block.name=Tin Block
 item.tin_ingot.name=Tin Ingot
 item.tin_nugget.name=Tin Nugget
 item.tin_ore.name=Tin Ore
+item.zinc_block.name=Zinc Block
 item.zinc_ingot.name=Zinc Ingot
 item.zinc_nugget.name=Zinc Nugget
 item.zinc_ore.name=Zinc Ore
 
 itemGroup.mistcraft=Mistcraft
 
+tile.copper_block.name=Copper Block
 tile.copper_ore.name=Copper Ore
+tile.tin_block.name=Tin Block
 tile.tin_ore.name=Tin Ore
+tile.zinc_block.name=Zinc Block
 tile.zinc_ore.name=Zinc Ore

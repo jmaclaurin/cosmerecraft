@@ -27,6 +27,9 @@ public class ModelManager {
         registerBlockModelAsItem(ModBlocks.COPPER_ORE);
         registerBlockModelAsItem(ModBlocks.TIN_ORE);
         registerBlockModelAsItem(ModBlocks.ZINC_ORE);
+        registerBlockModelAsItem(ModBlocks.COPPER_BLOCK);
+        registerBlockModelAsItem(ModBlocks.TIN_BLOCK);
+        registerBlockModelAsItem(ModBlocks.ZINC_BLOCK);
     }
 
     private static void registerItemModels() {

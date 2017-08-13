@@ -1,7 +1,6 @@
 package com.mistcraft;
 
 import com.mistcraft.common.CommonProxy;
-import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -22,8 +21,6 @@ public class Mistcraft {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        // some example code
-        System.out.println("DIRT BLOCK >> "+ Blocks.DIRT.getUnlocalizedName());
         proxy.init(event);
     }
 
