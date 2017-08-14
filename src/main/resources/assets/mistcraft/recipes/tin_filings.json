@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mistcraft:tin_ingot"
+    },
+    {
+      "item": "mistcraft:iron_file"
+    }
+  ],
+  "result": {
+    "item": "mistcraft:tin_shavings"
+  }
+}

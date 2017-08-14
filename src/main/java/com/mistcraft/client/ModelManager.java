@@ -36,6 +36,7 @@ public class ModelManager {
         registerItemModel(ModItems.COPPER_INGOT);
         registerItemModel(ModItems.COPPER_NUGGET);
         registerItemModel(ModItems.COPPER_SHAVINGS);
+        registerItemModel(ModItems.FILE);
         registerItemModel(ModItems.TIN_INGOT);
         registerItemModel(ModItems.TIN_NUGGET);
         registerItemModel(ModItems.TIN_SHAVINGS);
