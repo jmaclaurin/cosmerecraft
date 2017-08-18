@@ -8,9 +8,17 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemFile extends ItemBase {
+    public ItemFile(String unlocalizedName, int maxStackSize, int maxDamage) {
+        super(unlocalizedName, maxStackSize, maxDamage);
+        this.setHasSubtypes(true);
+    }
+
+    public ItemFile(String unlocalizedName, int maxStackSize) {
+        this(unlocalizedName, maxStackSize, 20);
+    }
+
     public ItemFile(String unlocalizedName) {
-        super(unlocalizedName, 1);
-        this.setMaxDamage(20);
+        this(unlocalizedName, 1);
     }
 
     @Override
@@ -20,7 +28,6 @@ public class ItemFile extends ItemBase {
             ItemStack stack = new ItemStack(this, 1, fileType.ordinal());
             NBTTagCompound nbt = new NBTTagCompound();
             nbt.setInteger("itemDamage", 0);
-            //fileType.getDurability()
             stack.setTagCompound(nbt);
             items.add(stack);
         }
@@ -28,12 +35,13 @@ public class ItemFile extends ItemBase {
 
     @Override
     public String getUnlocalizedName(ItemStack stack) {
-        return super.getUnlocalizedName(stack) + "." + EnumFileType.values()[stack.getMetadata()].getUnlocalizedName();
+        return "item." + EnumFileType.values()[stack.getMetadata()].getUnlocalizedName();
     }
 
     @Override
     public boolean hasContainerItem(ItemStack stack) {
-        return true;
+//        return true;
+        return stack.getItemDamage() < stack.getMaxDamage();
     }
 
     @Override
