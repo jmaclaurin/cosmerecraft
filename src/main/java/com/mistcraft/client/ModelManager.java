@@ -1,8 +1,11 @@
 package com.mistcraft.client;
 
+import com.mistcraft.Mistcraft;
 import com.mistcraft.common.block.ModBlocks;
+import com.mistcraft.common.item.EnumFileType;
 import com.mistcraft.common.item.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -36,13 +39,29 @@ public class ModelManager {
         registerItemModel(ModItems.COPPER_INGOT);
         registerItemModel(ModItems.COPPER_NUGGET);
         registerItemModel(ModItems.COPPER_SHAVINGS);
-        registerItemModel(ModItems.FILE);
         registerItemModel(ModItems.TIN_INGOT);
         registerItemModel(ModItems.TIN_NUGGET);
         registerItemModel(ModItems.TIN_SHAVINGS);
         registerItemModel(ModItems.ZINC_INGOT);
         registerItemModel(ModItems.ZINC_NUGGET);
         registerItemModel(ModItems.ZINC_SHAVINGS);
+
+        for(int i = 0; i < EnumFileType.values().length; i++){
+//            ModelBakery.registerItemVariants(ModItems.FILE, new ModelResourceLocation(Mistcraft.MODID + ":" +
+//                    EnumFileType.values()[i].getUnlocalizedName(), "inventory"));
+//            ModelLoader.setCustomModelResourceLocation(ModItems.FILE, i,
+//                    new ModelResourceLocation(Mistcraft.MODID + ":" +
+//                            EnumFileType.values()[i].getUnlocalizedName(), "inventory"));
+        }
+//
+//        ModelBakery.registerItemVariants(ModItems.FILE,
+//                new ModelResourceLocation("mistcraft:steel_file", "inventory"),
+//                new ModelResourceLocation("mistcraft:iron_file", "inventory"));
+
+        ModelLoader.setCustomModelResourceLocation(ModItems.FILE, 0,
+                    new ModelResourceLocation("mistcraft:file", "steel_file"));
+        ModelLoader.setCustomModelResourceLocation(ModItems.FILE, 1,
+                new ModelResourceLocation("mistcraft:file", "iron_file"));
     }
 
     public static void registerItemModel(Item item, String variant,  int meta) {
