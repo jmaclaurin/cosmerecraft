@@ -47,21 +47,9 @@ public class ModelManager {
         registerItemModel(ModItems.ZINC_SHAVINGS);
 
         for(int i = 0; i < EnumFileType.values().length; i++){
-//            ModelBakery.registerItemVariants(ModItems.FILE, new ModelResourceLocation(Mistcraft.MODID + ":" +
-//                    EnumFileType.values()[i].getUnlocalizedName(), "inventory"));
-//            ModelLoader.setCustomModelResourceLocation(ModItems.FILE, i,
-//                    new ModelResourceLocation(Mistcraft.MODID + ":" +
-//                            EnumFileType.values()[i].getUnlocalizedName(), "inventory"));
+            ModelLoader.setCustomModelResourceLocation(ModItems.FILE, i,
+                    new ModelResourceLocation(Mistcraft.MODID + ":" + EnumFileType.values()[i].getUnlocalizedName(), "inventory"));
         }
-//
-//        ModelBakery.registerItemVariants(ModItems.FILE,
-//                new ModelResourceLocation("mistcraft:steel_file", "inventory"),
-//                new ModelResourceLocation("mistcraft:iron_file", "inventory"));
-
-        ModelLoader.setCustomModelResourceLocation(ModItems.FILE, 0,
-                    new ModelResourceLocation("mistcraft:file", "steel_file"));
-        ModelLoader.setCustomModelResourceLocation(ModItems.FILE, 1,
-                new ModelResourceLocation("mistcraft:file", "iron_file"));
     }
 
     public static void registerItemModel(Item item, String variant,  int meta) {

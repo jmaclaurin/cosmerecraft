@@ -5,7 +5,8 @@
       "item": "mistcraft:copper_ingot"
     },
     {
-      "item": "mistcraft:file"
+      "item": "mistcraft:file",
+      "data": 32767
     }
   ],
   "result": {

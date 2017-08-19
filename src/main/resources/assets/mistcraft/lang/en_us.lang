@@ -4,6 +4,7 @@ item.copper_nugget.name=Copper Nugget
 item.copper_ore.name=Copper Ore
 item.copper_shavings.name=Copper Shavings
 item.iron_file.name=Iron File
+item.steel_file.name=Steel File
 item.tin_block.name=Tin Block
 item.tin_ingot.name=Tin Ingot
 item.tin_nugget.name=Tin Nugget

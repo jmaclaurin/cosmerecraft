@@ -1,8 +1,8 @@
 package com.mistcraft.common.item;
 
 public enum EnumFileType {
-    IRON("iron_file", 10),
-    STEEL("steel_file", 30);
+    IRON("iron_file", 16),
+    STEEL("steel_file", 32);
 
     private final String unlocalizedName;
     private final int durability;
