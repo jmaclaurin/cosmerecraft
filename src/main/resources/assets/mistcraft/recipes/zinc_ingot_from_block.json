@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mistcraft:zinc_block"
+    }
+  ],
+  "result": {
+    "item": "mistcraft:zinc_ingot",
+    "count": 9
+  }
+}
