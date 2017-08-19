@@ -2,10 +2,9 @@ package com.mistcraft.client;
 
 import com.mistcraft.Mistcraft;
 import com.mistcraft.common.block.ModBlocks;
-import com.mistcraft.common.item.EnumFileType;
+import com.mistcraft.common.item.ItemFile;
 import com.mistcraft.common.item.ModItems;
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -46,9 +45,10 @@ public class ModelManager {
         registerItemModel(ModItems.ZINC_NUGGET);
         registerItemModel(ModItems.ZINC_SHAVINGS);
 
-        for(int i = 0; i < EnumFileType.values().length; i++){
+        for(int i = 0; i < ItemFile.EnumFileType.values().length; i++){
             ModelLoader.setCustomModelResourceLocation(ModItems.FILE, i,
-                    new ModelResourceLocation(Mistcraft.MODID + ":" + EnumFileType.values()[i].getUnlocalizedName(), "inventory"));
+                    new ModelResourceLocation(Mistcraft.MODID + ":" +
+                            ItemFile.EnumFileType.values()[i].getUnlocalizedName(), "inventory"));
         }
     }
 

@@ -1,8 +1,10 @@
 package com.mistcraft.common.item;
 
 import com.mistcraft.common.MistcraftCreativeTab;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.ModelLoader;
 
 public class ItemBase extends Item {
     public ItemBase(String unlocalizedName, int maxStackSize, int maxDamage) {
@@ -19,5 +21,10 @@ public class ItemBase extends Item {
 
     public ItemBase(String unlocalizedName) {
         this(unlocalizedName, 64);
+    }
+
+    public void registerModels() {
+        ModelLoader.setCustomModelResourceLocation(this, 0,
+                new ModelResourceLocation(this.getRegistryName(), "inventory"));
     }
 }

@@ -4,18 +4,38 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.NonNullList;
-import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemFile extends ItemBase {
+    public enum EnumFileType {
+        IRON("iron_file", 16),
+        STEEL("steel_file", 32);
+
+        private final String unlocalizedName;
+        private final int durability;
+
+        EnumFileType(String unlocalizedName, int durability) {
+            this.unlocalizedName = unlocalizedName;
+            this.durability = durability;
+        }
+
+        public String getUnlocalizedName() {
+            return this.unlocalizedName;
+        }
+
+        public int getDurability() {
+            return durability;
+        }
+    }
+
     public ItemFile(String unlocalizedName, int maxStackSize, int maxDamage) {
         super(unlocalizedName, maxStackSize, maxDamage);
         this.setHasSubtypes(true);
     }
 
     public ItemFile(String unlocalizedName, int maxStackSize) {
-        this(unlocalizedName, maxStackSize, 20);
+        this(unlocalizedName, maxStackSize, 0);
     }
 
     public ItemFile(String unlocalizedName) {
@@ -27,9 +47,7 @@ public class ItemFile extends ItemBase {
     public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
         for(EnumFileType fileType : EnumFileType.values()) {
             ItemStack stack = new ItemStack(this, 1, fileType.ordinal());
-            NBTTagCompound nbt = new NBTTagCompound();
-            nbt.setInteger("itemDamage", 0);
-            stack.setTagCompound(nbt);
+            setDamage(stack, 0);
             items.add(stack);
         }
     }
@@ -41,7 +59,7 @@ public class ItemFile extends ItemBase {
 
     @Override
     public boolean hasContainerItem(ItemStack stack) {
-        return stack.getItemDamage() <= EnumFileType.values()[stack.getMetadata()].getDurability();
+        return stack.getItemDamage() < (getMaxDurability(stack) - 1);
     }
 
     @Override
@@ -87,12 +105,6 @@ public class ItemFile extends ItemBase {
     @Override
     public double getDurabilityForDisplay(ItemStack stack) {
         return (double)stack.getItemDamage() / (double)getMaxDurability(stack);
-    }
-
-    @Override
-    public int getRGBDurabilityForDisplay(ItemStack stack)
-    {
-        return MathHelper.hsvToRGB(Math.max(0.0F, (float) (1.0F - getDurabilityForDisplay(stack))) / 3.0F, 1.0F, 1.0F);
     }
 
     @Override

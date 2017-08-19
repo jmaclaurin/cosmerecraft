@@ -10,15 +10,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         GameRegistry.registerWorldGenerator(new ModWorldGenerator(), 0);
-
 //        ModRecipes.registerSmeltingRecipes();
     }
 
-    public void init(FMLInitializationEvent event) {
+    public void init(FMLInitializationEvent event) {}
 
-    }
-
-    public void postInit(FMLPostInitializationEvent event) {
-
-    }
+    public void postInit(FMLPostInitializationEvent event) {}
 }
