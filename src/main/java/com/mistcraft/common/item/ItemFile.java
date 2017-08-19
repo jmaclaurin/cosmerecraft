@@ -54,7 +54,11 @@ public class ItemFile extends ItemBase {
 
     @Override
     public String getUnlocalizedName(ItemStack stack) {
-        return "item." + EnumFileType.values()[stack.getMetadata()].getUnlocalizedName();
+        if(stack.getMetadata() < EnumFileType.values().length) {
+            return "item." + EnumFileType.values()[stack.getMetadata()].getUnlocalizedName();
+        } else {
+            return "item.file";
+        }
     }
 
     @Override

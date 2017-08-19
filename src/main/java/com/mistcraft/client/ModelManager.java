@@ -38,6 +38,8 @@ public class ModelManager {
         registerItemModel(ModItems.COPPER_INGOT);
         registerItemModel(ModItems.COPPER_NUGGET);
         registerItemModel(ModItems.COPPER_SHAVINGS);
+        registerItemModel(ModItems.GOLD_SHAVINGS);
+        registerItemModel(ModItems.IRON_SHAVINGS);
         registerItemModel(ModItems.TIN_INGOT);
         registerItemModel(ModItems.TIN_NUGGET);
         registerItemModel(ModItems.TIN_SHAVINGS);
