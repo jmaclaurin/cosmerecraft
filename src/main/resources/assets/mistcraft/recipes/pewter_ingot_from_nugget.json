@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "mistcraft:pewter_nugget"
+    }
+  },
+  "result": {
+    "item": "mistcraft:pewter_ingot"
+  }
+}

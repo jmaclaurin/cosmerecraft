@@ -28,6 +28,7 @@ public class ModelManager {
     private static void registerBlockModels() {
         registerBlockModelAsItem(ModBlocks.COPPER_BLOCK);
         registerBlockModelAsItem(ModBlocks.COPPER_ORE);
+        registerBlockModelAsItem(ModBlocks.PEWTER_BLOCK);
         registerBlockModelAsItem(ModBlocks.STEEL_BLOCK);
         registerBlockModelAsItem(ModBlocks.TIN_BLOCK);
         registerBlockModelAsItem(ModBlocks.TIN_ORE);
@@ -41,6 +42,9 @@ public class ModelManager {
         registerItemModel(ModItems.COPPER_SHAVINGS);
         registerItemModel(ModItems.GOLD_SHAVINGS);
         registerItemModel(ModItems.IRON_SHAVINGS);
+        registerItemModel(ModItems.PEWTER_INGOT);
+        registerItemModel(ModItems.PEWTER_NUGGET);
+        registerItemModel(ModItems.PEWTER_SHAVINGS);
         registerItemModel(ModItems.STEEL_INGOT);
         registerItemModel(ModItems.STEEL_NUGGET);
         registerItemModel(ModItems.STEEL_SHAVINGS);

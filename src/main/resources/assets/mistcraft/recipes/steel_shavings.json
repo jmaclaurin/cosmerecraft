@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mistcraft:steel_ingot"
+    },
+    {
+      "item": "mistcraft:file",
+      "data": 32767
+    }
+  ],
+  "result": {
+    "item": "mistcraft:steel_shavings"
+  }
+}
