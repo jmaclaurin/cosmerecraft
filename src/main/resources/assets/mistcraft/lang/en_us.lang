@@ -1,3 +1,7 @@
+item.brass_block.name=Brass Block
+item.brass_ingot.name=Brass Ingot
+item.brass_nugget.name=Brass Nugget
+item.brass_shavings.name=Brass Shavings
 item.copper_block.name=Copper Block
 item.copper_ingot.name=Copper Ingot
 item.copper_nugget.name=Copper Nugget
@@ -28,6 +32,7 @@ item.zinc_shavings.name=Zinc Shavings
 
 itemGroup.mistcraft=Mistcraft
 
+tile.brass_block.name=Brass Block
 tile.copper_block.name=Copper Block
 tile.copper_ore.name=Copper Ore
 tile.pewter_block.name=Pewter Block

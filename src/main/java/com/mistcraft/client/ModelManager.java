@@ -26,6 +26,7 @@ public class ModelManager {
     }
 
     private static void registerBlockModels() {
+        registerBlockModelAsItem(ModBlocks.BRASS_BLOCK);
         registerBlockModelAsItem(ModBlocks.COPPER_BLOCK);
         registerBlockModelAsItem(ModBlocks.COPPER_ORE);
         registerBlockModelAsItem(ModBlocks.PEWTER_BLOCK);
@@ -37,6 +38,9 @@ public class ModelManager {
     }
 
     private static void registerItemModels() {
+        registerItemModel(ModItems.BRASS_INGOT);
+        registerItemModel(ModItems.BRASS_NUGGET);
+        registerItemModel(ModItems.BRASS_SHAVINGS);
         registerItemModel(ModItems.COPPER_INGOT);
         registerItemModel(ModItems.COPPER_NUGGET);
         registerItemModel(ModItems.COPPER_SHAVINGS);

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mistcraft:brass_block"
+    }
+  ],
+  "result": {
+    "item": "mistcraft:brass_ingot",
+    "count": 9
+  }
+}
