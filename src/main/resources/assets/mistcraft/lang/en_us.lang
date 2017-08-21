@@ -7,6 +7,9 @@ item.gold_shavings.name=Gold Shavings
 item.iron_file.name=Iron File
 item.iron_shavings.name=Iron Shavings
 item.steel_file.name=Steel File
+item.steel_ingot.name=Steel Ingot
+item.steel_nugget.name=Steel Nugget
+item.steel_shavings.name=Steel Shavings
 item.tin_block.name=Tin Block
 item.tin_ingot.name=Tin Ingot
 item.tin_nugget.name=Tin Nugget
@@ -22,6 +25,7 @@ itemGroup.mistcraft=Mistcraft
 
 tile.copper_block.name=Copper Block
 tile.copper_ore.name=Copper Ore
+tile.steel_block.name=Steel Block
 tile.tin_block.name=Tin Block
 tile.tin_ore.name=Tin Ore
 tile.zinc_block.name=Zinc Block
