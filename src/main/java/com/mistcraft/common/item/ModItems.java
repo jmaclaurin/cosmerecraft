@@ -11,6 +11,9 @@ public final class ModItems {
     public static Item BRASS_INGOT = new ItemBase("brass_ingot");
     public static Item BRASS_NUGGET = new ItemBase("brass_nugget");
     public static Item BRASS_SHAVINGS = new ItemBase("brass_shavings");
+    public static Item BRONZE_INGOT = new ItemBase("bronze_ingot");
+    public static Item BRONZE_NUGGET = new ItemBase("bronze_nugget");
+    public static Item BRONZE_SHAVINGS = new ItemBase("bronze_shavings");
     public static Item COPPER_INGOT = new ItemBase("copper_ingot");
     public static Item COPPER_NUGGET = new ItemBase("copper_nugget");
     public static Item COPPER_SHAVINGS = new ItemBase("copper_shavings");
@@ -37,6 +40,9 @@ public final class ModItems {
                 BRASS_INGOT,
                 BRASS_NUGGET,
                 BRASS_SHAVINGS,
+                BRONZE_INGOT,
+                BRONZE_NUGGET,
+                BRONZE_SHAVINGS,
                 COPPER_INGOT,
                 COPPER_NUGGET,
                 COPPER_SHAVINGS,

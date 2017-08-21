@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber(modid = com.mistcraft.Mistcraft.MODID)
 public final class ModBlocks {
     public static Block BRASS_BLOCK = new BlockBase("brass_block");
+    public static Block BRONZE_BLOCK = new BlockBase("bronze_block");
     public static Block COPPER_BLOCK = new BlockBase("copper_block");
     public static Block COPPER_ORE = new BlockBase("copper_ore");
     public static Block PEWTER_BLOCK = new BlockBase("pewter_block");
@@ -23,6 +24,7 @@ public final class ModBlocks {
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
                 BRASS_BLOCK,
+                BRONZE_BLOCK,
                 COPPER_BLOCK,
                 COPPER_ORE,
                 PEWTER_BLOCK,
@@ -38,6 +40,7 @@ public final class ModBlocks {
     public static void registerItemBlocks(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
                 new ItemBlock(BRASS_BLOCK).setRegistryName(BRASS_BLOCK.getRegistryName()),
+                new ItemBlock(BRONZE_BLOCK).setRegistryName(BRONZE_BLOCK.getRegistryName()),
                 new ItemBlock(COPPER_BLOCK).setRegistryName(COPPER_BLOCK.getRegistryName()),
                 new ItemBlock(COPPER_ORE).setRegistryName(COPPER_ORE.getRegistryName()),
                 new ItemBlock(PEWTER_BLOCK).setRegistryName(PEWTER_BLOCK.getRegistryName()),
