@@ -30,6 +30,7 @@ public class ModelManager {
         registerBlockModelAsItem(ModBlocks.BRASS_BLOCK);
         registerBlockModelAsItem(ModBlocks.COPPER_BLOCK);
         registerBlockModelAsItem(ModBlocks.COPPER_ORE);
+        registerBlockModelAsItem(ModBlocks.ELECTRUM_BLOCK);
         registerBlockModelAsItem(ModBlocks.PEWTER_BLOCK);
         registerBlockModelAsItem(ModBlocks.STEEL_BLOCK);
         registerBlockModelAsItem(ModBlocks.TIN_BLOCK);
@@ -48,6 +49,9 @@ public class ModelManager {
         registerItemModel(ModItems.COPPER_INGOT);
         registerItemModel(ModItems.COPPER_NUGGET);
         registerItemModel(ModItems.COPPER_SHAVINGS);
+        registerItemModel(ModItems.ELECTRUM_INGOT);
+        registerItemModel(ModItems.ELECTRUM_NUGGET);
+        registerItemModel(ModItems.ELECTRUM_SHAVINGS);
         registerItemModel(ModItems.GOLD_SHAVINGS);
         registerItemModel(ModItems.IRON_SHAVINGS);
         registerItemModel(ModItems.PEWTER_INGOT);
