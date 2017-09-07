@@ -1,5 +1,7 @@
 package com.mistcraft.common.capability;
 
+import com.mistcraft.common.util.AllomanticMetal;
+
 import java.util.HashMap;
 import java.util.Map;
 

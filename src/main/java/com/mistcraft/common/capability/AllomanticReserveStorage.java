@@ -1,5 +1,6 @@
 package com.mistcraft.common.capability;
 
+import com.mistcraft.common.util.AllomanticMetal;
 import net.minecraft.nbt.NBTBase;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;

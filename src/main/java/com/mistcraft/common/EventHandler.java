@@ -1,7 +1,7 @@
 package com.mistcraft.common;
 
 import com.mistcraft.Mistcraft;
-import com.mistcraft.common.capability.AllomanticMetal;
+import com.mistcraft.common.util.AllomanticMetal;
 import com.mistcraft.common.capability.AllomanticReserveProvider;
 import com.mistcraft.common.capability.IAllomanticReserve;
 import net.minecraft.entity.player.EntityPlayer;

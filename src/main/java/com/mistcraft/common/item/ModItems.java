@@ -1,6 +1,7 @@
 package com.mistcraft.common.item;
 
 import com.mistcraft.Mistcraft;
+import com.mistcraft.common.vial.VialType;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -32,6 +33,7 @@ public final class ModItems {
     public static Item TIN_INGOT = new ItemBase("tin_ingot");
     public static Item TIN_NUGGET = new ItemBase("tin_nugget");
     public static Item TIN_SHAVINGS = new ItemBase("tin_shavings");
+    public static Item VIAL = new ItemVial();
     public static Item ZINC_INGOT = new ItemBase("zinc_ingot");
     public static Item ZINC_NUGGET = new ItemBase("zinc_nugget");
     public static Item ZINC_SHAVINGS = new ItemBase("zinc_shavings");
@@ -39,6 +41,8 @@ public final class ModItems {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
+        // Register vials
+        VialType.registerVialTypes();
         event.getRegistry().registerAll(
                 BRASS_INGOT,
                 BRASS_NUGGET,
