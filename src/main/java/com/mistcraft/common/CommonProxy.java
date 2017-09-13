@@ -3,7 +3,7 @@ package com.mistcraft.common;
 import com.mistcraft.common.capability.AllomanticReserve;
 import com.mistcraft.common.capability.AllomanticReserveStorage;
 import com.mistcraft.common.capability.IAllomanticReserve;
-import com.mistcraft.common.recipe.ModRecipes;
+import com.mistcraft.common.vial.ModVials;
 import com.mistcraft.world.gen.ModWorldGenerator;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

@@ -63,6 +63,7 @@ public class ModelManager {
         registerItemModel(ModItems.TIN_INGOT);
         registerItemModel(ModItems.TIN_NUGGET);
         registerItemModel(ModItems.TIN_SHAVINGS);
+        registerItemModel(ModItems.VIAL);
         registerItemModel(ModItems.ZINC_INGOT);
         registerItemModel(ModItems.ZINC_NUGGET);
         registerItemModel(ModItems.ZINC_SHAVINGS);

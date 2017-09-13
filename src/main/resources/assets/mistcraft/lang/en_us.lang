@@ -32,6 +32,7 @@ item.tin_ingot.name=Tin Ingot
 item.tin_nugget.name=Tin Nugget
 item.tin_ore.name=Tin Ore
 item.tin_shavings.name=Tin Shavings
+item.vial.name=Vial of %s
 item.zinc_block.name=Zinc Block
 item.zinc_ingot.name=Zinc Ingot
 item.zinc_nugget.name=Zinc Nugget
@@ -51,3 +52,15 @@ tile.tin_block.name=Tin Block
 tile.tin_ore.name=Tin Ore
 tile.zinc_block.name=Zinc Block
 tile.zinc_ore.name=Zinc Ore
+
+# METALS
+brass.name=Brass
+bronze.name=Bronze
+copper.name=Copper
+electrum.name=Electrum
+gold.name=Gold
+iron.name=Iron
+pewter.name=Pewter
+steel.name=Steel
+tin.name=Tin
+zinc.name=Zinc
