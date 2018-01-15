@@ -1,7 +1,7 @@
 package com.mistcraft.common.item;
 
 import com.mistcraft.Mistcraft;
-import com.mistcraft.common.capability.AllomanticReserveProvider;
+import com.mistcraft.common.capability.allomanticreserve.AllomanticReserveProvider;
 import com.mistcraft.common.vial.ModVials;
 import com.mistcraft.common.vial.Vial;
 import com.mistcraft.common.vial.VialUtils;

@@ -1,10 +1,12 @@
 package com.mistcraft.common;
 
 import com.mistcraft.Mistcraft;
+import com.mistcraft.common.entity.EntityAllomanticLine;
 import com.mistcraft.common.util.AllomanticMetal;
-import com.mistcraft.common.capability.AllomanticReserveProvider;
-import com.mistcraft.common.capability.IAllomanticReserve;
+import com.mistcraft.common.capability.allomanticreserve.AllomanticReserveProvider;
+import com.mistcraft.common.capability.allomanticreserve.IAllomanticReserve;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.projectile.EntityFishHook;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -23,5 +25,7 @@ public class EventHandler {
         }
 
         player.sendMessage(new TextComponentString(message));
+
+        EntityAllomanticLine entityAllomanticLine = new EntityAllomanticLine(event., player);
     }
 }

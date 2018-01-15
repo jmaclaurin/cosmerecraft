@@ -1,4 +1,4 @@
-package com.mistcraft.common.capability;
+package com.mistcraft.common.capability.allomanticreserve;
 
 import net.minecraft.nbt.NBTBase;
 import net.minecraft.util.EnumFacing;

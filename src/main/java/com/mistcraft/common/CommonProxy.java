@@ -1,9 +1,8 @@
 package com.mistcraft.common;
 
-import com.mistcraft.common.capability.AllomanticReserve;
-import com.mistcraft.common.capability.AllomanticReserveStorage;
-import com.mistcraft.common.capability.IAllomanticReserve;
-import com.mistcraft.common.vial.ModVials;
+import com.mistcraft.common.capability.allomanticreserve.AllomanticReserve;
+import com.mistcraft.common.capability.allomanticreserve.AllomanticReserveStorage;
+import com.mistcraft.common.capability.allomanticreserve.IAllomanticReserve;
 import com.mistcraft.world.gen.ModWorldGenerator;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

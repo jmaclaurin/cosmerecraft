@@ -1,6 +1,7 @@
 package com.mistcraft.common.capability;
 
 import com.mistcraft.Mistcraft;
+import com.mistcraft.common.capability.allomanticreserve.AllomanticReserveProvider;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;

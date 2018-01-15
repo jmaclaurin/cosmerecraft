@@ -1,4 +1,4 @@
-package com.mistcraft.common.capability;
+package com.mistcraft.common.capability.allomanticreserve;
 
 import com.mistcraft.common.util.AllomanticMetal;
 import net.minecraft.nbt.NBTBase;
