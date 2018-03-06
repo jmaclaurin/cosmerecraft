@@ -45,18 +45,4 @@ public class ClientProxy extends CommonProxy {
     public void postInit(FMLPostInitializationEvent event) {
         super.postInit(event);
     }
-
-    @SubscribeEvent
-    public static void renderWorldLastEvent(RenderWorldLastEvent event) {
-        GlStateManager.pushMatrix();
-        GlStateManager.pushAttrib();
-        Tessellator tessellator = Tessellator.getInstance();
-        BufferBuilder worldRenderer = tessellator.getBuffer();
-        worldRenderer.begin(GL11.GL_LINES, DefaultVertexFormats.POSITION_COLOR);
-        worldRenderer.pos(0, 1, 0).color(255, 0, 255, 255).endVertex();
-        worldRenderer.pos(3, 1, 0).color(255, 0, 255, 255).endVertex();
-        tessellator.draw();
-        GlStateManager.popMatrix();
-        GlStateManager.popAttrib();
-    }
 }
